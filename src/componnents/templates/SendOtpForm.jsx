@@ -1,5 +1,6 @@
 import React from "react";
 import {sendOtp} from "../../services/auth";
+import styles from './SendOtpForm.module.css'
 
 export default function SendOtpForm({ mobile, setMobile, setStep }) {
   const iranianPhoneNumberRegex = /^(\+98|0)?9\d{9}$/;
@@ -16,7 +17,7 @@ export default function SendOtpForm({ mobile, setMobile, setStep }) {
   }
   return (
     <>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={submitHandler} className={styles.form}>
         <p>ورود به حساب کاربری</p>
         <span>
           برای استفاده از برنامخ دیوار باید شماره تلفن خود را وارد کنید
