@@ -3,6 +3,7 @@ import Routse from "./router/Router";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import Layout from "./componnents/layouts/Layout";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const queryClient = new QueryClient({
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routse />
+          <Toaster/>
         </Layout>
       </BrowserRouter>
       <ReactQueryDevtools />
