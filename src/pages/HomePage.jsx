@@ -1,9 +1,12 @@
-import React from 'react';
+import Sidebar from '../componnents/templates/Sidebar';
+import Main from '../componnents/templates/Main';
 
 function HomePage(props) {
+    const style={display:"flex"}
     return (
-        <div>
-            HOmePage
+        <div style={style}>
+            <Sidebar/>
+            <Main/>
         </div>
     );
 }
